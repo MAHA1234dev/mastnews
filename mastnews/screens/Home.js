@@ -36,7 +36,7 @@ const Home = ({ props, navigation }) => {
   }, []);
   const getData = async () => {
     await axios
-      .get("http://localhost:3000/news")
+      .get("http://localhost:19006/news")
       .then((res) => {
         setData(res.data);
       })
@@ -46,7 +46,7 @@ const Home = ({ props, navigation }) => {
   };
   const getType = async () => {
     await axios
-      .get("http://localhost:3000/categories")
+      .get("http://localhost:19006/categories")
       .then((res) => {
         setType(res.data);
       })
@@ -56,7 +56,7 @@ const Home = ({ props, navigation }) => {
   };
   const getTopNews = async () => {
     await axios
-      .get("http://localhost:3000/TopNews")
+      .get("http://localhost:19006/TopNews")
       .then((res) => {
         setTopNews(res.data);
       })
